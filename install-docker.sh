@@ -14,7 +14,7 @@ chmod +x /usr/local/bin/docker-compose
 
 mkdir -p /data/danted
 cd /data/danted
-curl http://104.225.156.231/docker-compose.yml -o docker-compose.yml
+curl https://raw.githubusercontent.com/cc51758902/danted/master/docker/docker-compose.yml -o docker-compose.yml
 touch sockd.passwd
 docker-compose up -d
 docker-compose exec sockd script/pam add socksuser 36U524A19611BEW424F
