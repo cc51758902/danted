@@ -17,4 +17,4 @@ cd /data/danted
 curl https://raw.githubusercontent.com/cc51758902/danted/master/docker/docker-compose.yml -o docker-compose.yml
 touch sockd.passwd
 docker-compose up -d
-docker-compose exec sockd script/pam add socksuser Fe9WtntQPflsKQXx
+docker-compose exec sockd script/pam add socksuser gCYXiqus
