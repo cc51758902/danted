@@ -3,6 +3,8 @@
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}错误：${plain} 必须使用root用户运行此脚本！\n" && exit 1
 
+apt update -y
+
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 rm -f get-docker.sh
