@@ -20,3 +20,4 @@ curl https://raw.githubusercontent.com/cc51758902/danted/master/docker/docker-co
 touch sockd.passwd
 docker-compose up -d
 docker-compose exec sockd script/pam add socksuser gCYXiqus
+docker-compose exec sockd script/pam add ccuser x4FmVQRR
